@@ -21,7 +21,7 @@ struct ContentViewHome: View {
             Image("User")
                 .cornerRadius(200)
             
-            Text("SpongeBob님 환영합니다!")
+            Text("은주님 환영합니다!")
                 .font(.title)
                 .padding(.top, 50)
         }

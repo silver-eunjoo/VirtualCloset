@@ -26,14 +26,14 @@ struct ContentViewCloset: View {
                         .font(.title)
                 }.navigationTitle("Clothes")
                 Spacer().frame(height:50)
-                NavigationLink(destination: SummerClothes()) {
+                NavigationLink(destination: FallClothes()) {
                     Image(systemName: "wind")
                         .font(.title)
                     Text("Fall Clothes")
                         .font(.title)
                 }.navigationTitle("Clothes")
                 Spacer().frame(height:50)
-                NavigationLink(destination: SummerClothes()) {
+                NavigationLink(destination: WinterClothes()) {
                     Image(systemName: "snowflake")
                         .font(.title)
                     Text("Winter Clothes")
@@ -48,24 +48,40 @@ struct ContentViewCloset: View {
 
 struct SpringClothes: View {
     var body: some View {
-        Text(verbatim: "ContentViewCar")
+        HStack{
+            Image("Cardigan1")
+                .resizable()
+            Image("Nike")
+                .resizable()
+        }
     }
 }
 
 struct SummerClothes: View {
     var body: some View {
-        Text(verbatim: "ContentViewCar")
+        HStack{
+            Image("Tshirts")
+                .resizable()
+            Image("Shorts")
+                .resizable()
+        }
     }
 }
 
 struct FallClothes: View {
     var body: some View {
-        Text(verbatim: "ContentViewCar")
+        HStack{
+            Image("Coat")
+                .resizable()
+            Image("Coat1")
+                .resizable()
+        }
     }
 }
 
 struct WinterClothes: View {
     var body: some View {
-        Text(verbatim: "ContentViewCar")
+        Image("Jacket")
+            .resizable()
     }
 }

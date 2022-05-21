@@ -1,8 +1,19 @@
 {
   "images" : [
     {
-      "filename" : "스크린샷 2022-05-21 오후 1.22.53.png",
-      "idiom" : "universal"
+      "filename" : "IMG_6103.jpg",
+      "idiom" : "universal",
+      "scale" : "1x"
+    },
+    {
+      "filename" : "IMG_6103-1.jpg",
+      "idiom" : "universal",
+      "scale" : "2x"
+    },
+    {
+      "filename" : "IMG_6103-2.jpg",
+      "idiom" : "universal",
+      "scale" : "3x"
     }
   ],
   "info" : {
