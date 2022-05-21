@@ -17,28 +17,28 @@ struct ContentViewCloset: View {
                         .font(.title)
                     Text("Spring Clothes")
                         .font(.title)
-                }.navigationTitle("Clothes")
+                }.navigationTitle("Closet")
                 Spacer().frame(height:50)
                 NavigationLink(destination: SummerClothes()) {
                     Image(systemName: "sun.max.fill")
                         .font(.title)
                     Text("Summer Clothes")
                         .font(.title)
-                }.navigationTitle("Clothes")
+                }.navigationTitle("Closet")
                 Spacer().frame(height:50)
                 NavigationLink(destination: FallClothes()) {
                     Image(systemName: "wind")
                         .font(.title)
                     Text("Fall Clothes")
                         .font(.title)
-                }.navigationTitle("Clothes")
+                }.navigationTitle("Closet")
                 Spacer().frame(height:50)
                 NavigationLink(destination: WinterClothes()) {
                     Image(systemName: "snowflake")
                         .font(.title)
                     Text("Winter Clothes")
                         .font(.title)
-                }.navigationTitle("Clothes")
+                }.navigationTitle("Closet")
                 Spacer().frame(height:50)
             }
             
