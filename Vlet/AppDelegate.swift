@@ -4,7 +4,6 @@
 //
 //  Created by Hruthvik Raj on 2022/05/26.
 //
-
 import UIKit
 import SwiftUI
 
@@ -46,4 +45,3 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 
 }
-
