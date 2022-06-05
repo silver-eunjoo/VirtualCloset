@@ -1,0 +1,362 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		D7E083AB28389AFE0084150B /* VirtualClosetApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7E083AA28389AFE0084150B /* VirtualClosetApp.swift */; };
+		D7E083AD28389AFE0084150B /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7E083AC28389AFE0084150B /* ContentView.swift */; };
+		D7E083AF28389B020084150B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D7E083AE28389B020084150B /* Assets.xcassets */; };
+		D7E083B228389B020084150B /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D7E083B128389B020084150B /* Preview Assets.xcassets */; };
+		D7E083BB28389BE60084150B /* nike-air-force_2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D7E083BA28389BE60084150B /* nike-air-force_2x.png */; };
+		D7E083BD28389EBE0084150B /* ContentViewHome.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7E083BC28389EBE0084150B /* ContentViewHome.swift */; };
+		D7E083BF28389EDD0084150B /* ContentViewtryon.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7E083BE28389EDD0084150B /* ContentViewtryon.swift */; };
+		D7E083C128389EE50084150B /* ContentViewCodi.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7E083C028389EE50084150B /* ContentViewCodi.swift */; };
+		D7E083C328389EF00084150B /* ContentViewCloset.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7E083C228389EF00084150B /* ContentViewCloset.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		D7E083A728389AFE0084150B /* VirtualCloset.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = VirtualCloset.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		D7E083AA28389AFE0084150B /* VirtualClosetApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VirtualClosetApp.swift; sourceTree = "<group>"; };
+		D7E083AC28389AFE0084150B /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		D7E083AE28389B020084150B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		D7E083B128389B020084150B /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		D7E083BA28389BE60084150B /* nike-air-force_2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "nike-air-force_2x.png"; sourceTree = "<group>"; };
+		D7E083BC28389EBE0084150B /* ContentViewHome.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentViewHome.swift; sourceTree = "<group>"; };
+		D7E083BE28389EDD0084150B /* ContentViewtryon.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentViewtryon.swift; sourceTree = "<group>"; };
+		D7E083C028389EE50084150B /* ContentViewCodi.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentViewCodi.swift; sourceTree = "<group>"; };
+		D7E083C228389EF00084150B /* ContentViewCloset.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentViewCloset.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		D7E083A428389AFE0084150B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		D7E0839E28389AFE0084150B = {
+			isa = PBXGroup;
+			children = (
+				D7E083A928389AFE0084150B /* VirtualCloset */,
+				D7E083A828389AFE0084150B /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		D7E083A828389AFE0084150B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D7E083A728389AFE0084150B /* VirtualCloset.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		D7E083A928389AFE0084150B /* VirtualCloset */ = {
+			isa = PBXGroup;
+			children = (
+				D7E083AA28389AFE0084150B /* VirtualClosetApp.swift */,
+				D7E083AC28389AFE0084150B /* ContentView.swift */,
+				D7E083BC28389EBE0084150B /* ContentViewHome.swift */,
+				D7E083C228389EF00084150B /* ContentViewCloset.swift */,
+				D7E083C028389EE50084150B /* ContentViewCodi.swift */,
+				D7E083BE28389EDD0084150B /* ContentViewtryon.swift */,
+				D7E083AE28389B020084150B /* Assets.xcassets */,
+				D7E083BA28389BE60084150B /* nike-air-force_2x.png */,
+				D7E083B028389B020084150B /* Preview Content */,
+			);
+			path = VirtualCloset;
+			sourceTree = "<group>";
+		};
+		D7E083B028389B020084150B /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				D7E083B128389B020084150B /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		D7E083A628389AFE0084150B /* VirtualCloset */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D7E083B528389B020084150B /* Build configuration list for PBXNativeTarget "VirtualCloset" */;
+			buildPhases = (
+				D7E083A328389AFE0084150B /* Sources */,
+				D7E083A428389AFE0084150B /* Frameworks */,
+				D7E083A528389AFE0084150B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = VirtualCloset;
+			productName = VirtualCloset;
+			productReference = D7E083A728389AFE0084150B /* VirtualCloset.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D7E0839F28389AFE0084150B /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1330;
+				LastUpgradeCheck = 1330;
+				TargetAttributes = {
+					D7E083A628389AFE0084150B = {
+						CreatedOnToolsVersion = 13.3.1;
+					};
+				};
+			};
+			buildConfigurationList = D7E083A228389AFE0084150B /* Build configuration list for PBXProject "VirtualCloset" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = D7E0839E28389AFE0084150B;
+			productRefGroup = D7E083A828389AFE0084150B /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D7E083A628389AFE0084150B /* VirtualCloset */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		D7E083A528389AFE0084150B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D7E083B228389B020084150B /* Preview Assets.xcassets in Resources */,
+				D7E083AF28389B020084150B /* Assets.xcassets in Resources */,
+				D7E083BB28389BE60084150B /* nike-air-force_2x.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		D7E083A328389AFE0084150B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D7E083BD28389EBE0084150B /* ContentViewHome.swift in Sources */,
+				D7E083AD28389AFE0084150B /* ContentView.swift in Sources */,
+				D7E083C328389EF00084150B /* ContentViewCloset.swift in Sources */,
+				D7E083AB28389AFE0084150B /* VirtualClosetApp.swift in Sources */,
+				D7E083C128389EE50084150B /* ContentViewCodi.swift in Sources */,
+				D7E083BF28389EDD0084150B /* ContentViewtryon.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		D7E083B328389B020084150B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		D7E083B428389B020084150B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		D7E083B628389B020084150B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"VirtualCloset/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.silver.VirtualCloset;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		D7E083B728389B020084150B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"VirtualCloset/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.silver.VirtualCloset;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		D7E083A228389AFE0084150B /* Build configuration list for PBXProject "VirtualCloset" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D7E083B328389B020084150B /* Debug */,
+				D7E083B428389B020084150B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D7E083B528389B020084150B /* Build configuration list for PBXNativeTarget "VirtualCloset" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D7E083B628389B020084150B /* Debug */,
+				D7E083B728389B020084150B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D7E0839F28389AFE0084150B /* Project object */;
+}
