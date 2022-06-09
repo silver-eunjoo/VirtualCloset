@@ -1,0 +1,12 @@
+{
+  "images" : [
+    {
+      "filename" : "Japanese_Clothes.jpg",
+      "idiom" : "universal"
+    }
+  ],
+  "info" : {
+    "author" : "xcode",
+    "version" : 1
+  }
+}
