@@ -4,10 +4,11 @@
 //
 //  Created by 이은주 on 2022/05/21.
 //
+
 import SwiftUI
 
 struct ContentViewCloset: View {
-
+    
     var body: some View {
         NavigationView() {
             VStack {
@@ -40,30 +41,30 @@ struct ContentViewCloset: View {
                 }.navigationTitle("Closet")
                 Spacer().frame(height:50)
             }
-
+            
         }
     }
 }
 
 struct SpringClothes: View {
-    var springs = [Image("Clothes"),Image("cardigan1"),Image("Clothes"),Image("cardigan2"),Image("Clothes"),Image("cardigan2"),Image("Clothes"),Image("cardigan2")]
-
+    var springs = [Image("springpant"),Image("springshirt"), Image("Kimono")]
+    
     private let adaptiveColumns = [
         GridItem(.adaptive(minimum:170))
     ]
-
+    
     var body: some View {
         NavigationView {
             ScrollView {
                 LazyVGrid(columns: adaptiveColumns, spacing: 10) {
-                    ForEach(0..<8) { index in
+                    ForEach(0..<3) { index in
                         springs[index]
                             .resizable()
                             .scaledToFill()
                             .cornerRadius(10)
                             .shadow(color:Color.primary.opacity(0.3), radius:1)
                     }
-
+                    
                 }
             }
         }.navigationTitle("Your Spring Clothes")
@@ -71,24 +72,24 @@ struct SpringClothes: View {
 }
 
 struct SummerClothes: View {
-    var summers = [Image("shirt"),Image("shorts"),Image("shirt"),Image("shorts"),Image("shirt"),Image("shorts"),Image("shorts"),Image("shirt")]
-
+    var summers = [Image("summerpant"),Image("summershirt"),Image("summershirt2")]
+    
     private let adaptiveColumns = [
         GridItem(.adaptive(minimum:170))
     ]
-
+    
     var body: some View {
         NavigationView {
             ScrollView {
                 LazyVGrid(columns: adaptiveColumns, spacing: 10) {
-                    ForEach(0..<8) { index in
+                    ForEach(0..<3) { index in
                         summers[index]
                             .resizable()
                             .scaledToFill()
                             .cornerRadius(10)
                             .shadow(color:Color.primary.opacity(0.3), radius:1)
                     }
-
+                    
                 }
             }
         }.navigationTitle("Your Summer Clothes")
@@ -96,24 +97,24 @@ struct SummerClothes: View {
 }
 
 struct FallClothes: View {
-    var falls = [Image("coat1"),Image("coat2"),Image("coat1"),Image("coat2"),Image("coat1"),Image("coat2"),Image("coat1"),Image("coat2")]
-
+    var falls = [Image("autumnpant"),Image("autumnshirt"), Image("Untitled_Scan")]
+    
     private let adaptiveColumns = [
         GridItem(.adaptive(minimum:170))
     ]
-
+    
     var body: some View {
         NavigationView {
             ScrollView {
                 LazyVGrid(columns: adaptiveColumns, spacing: 10) {
-                    ForEach(0..<8) { index in
+                    ForEach(0..<3) { index in
                         falls[index]
                             .resizable()
                             .scaledToFill()
                             .cornerRadius(10)
                             .shadow(color:Color.primary.opacity(0.3), radius:1)
                     }
-
+                    
                 }
             }
         }.navigationTitle("Your Fall Clothes")
@@ -121,24 +122,24 @@ struct FallClothes: View {
 }
 
 struct WinterClothes: View {
-    var winters = [Image("jacket"),Image("jacket2"),Image("jacket"),Image("jacket2"),Image("jacket"),Image("jacket2"),Image("jacket"),Image("jacket2")]
-
+    var winters = [Image("jacket2"),Image("winterpant")]
+    
     private let adaptiveColumns = [
         GridItem(.adaptive(minimum:170))
     ]
-
+    
     var body: some View {
         NavigationView {
             ScrollView {
                 LazyVGrid(columns: adaptiveColumns, spacing: 10) {
-                    ForEach(0..<8) { index in
+                    ForEach(0..<2) { index in
                         winters[index]
                             .resizable()
                             .scaledToFill()
                             .cornerRadius(10)
                             .shadow(color:Color.primary.opacity(0.3), radius:1)
                     }
-
+                    
                 }
             }
         }.navigationTitle("Your Winter Clothes")
