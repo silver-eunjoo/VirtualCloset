@@ -1,15 +1,15 @@
 //
-//  ContentView.swift
-//  VirtualCloset
+//  AppView.swift
+//  Vcloset
 //
-//  Created by 이은주 on 2022/05/21.
+//  Created by Hruthvik Raj on 2022/06/09.
 //
 
 import SwiftUI
 
 struct AppView: View {
     var body: some View {
-        
+        VStack{
         TabView{
             ContentViewHome()
                 .tabItem {
@@ -23,24 +23,33 @@ struct AppView: View {
                     Text("Closet")
                 }
             
-            ContentViewtryon()
+//
+            ContentView()
                 .tabItem {
                     Image(systemName: "skew")
                     Text("Try On")
                 }
-            ContentViewhelp()
+        //.background(Color.white.opacity(0.15))
+            GuideView()
                 .tabItem {
-                    Image(systemName: "questionmark.fill")
-                    Text("Help")
+                    Image(systemName:
+                            "questionmark")
+                    Text("Guide")
+                          
                 }
+        }
         }
     }
 }
-//
-//#if DEBUG
-//struct ContentView_Previews: PreviewProvider {
-//    static var previews: some View {
-//        ContentView()
-//    }
-//}
-//#endif
+
+#if DEBUG
+struct ContentView_Previews: PreviewProvider {
+    static var previews: some View {
+        AppView()
+            .environmentObject(PlacementSettings())
+            .environmentObject(ModelDeletionManager())
+           // .environmentObject(SessionSettings())
+    }
+}
+#endif
+
