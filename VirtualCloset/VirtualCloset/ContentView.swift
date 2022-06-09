@@ -28,14 +28,19 @@ struct ContentView: View {
                     Image(systemName: "skew")
                     Text("Try On")
                 }
+            ContentViewhelp()
+                .tabItem {
+                    Image(systemName: "questionmark.fill")
+                    Text("Help")
+                }
         }
     }
 }
-
-#if DEBUG
-struct ContentView_Previews: PreviewProvider {
-    static var previews: some View {
-        ContentView()
-    }
-}
-#endif
+//
+//#if DEBUG
+//struct ContentView_Previews: PreviewProvider {
+//    static var previews: some View {
+//        ContentView()
+//    }
+//}
+//#endif

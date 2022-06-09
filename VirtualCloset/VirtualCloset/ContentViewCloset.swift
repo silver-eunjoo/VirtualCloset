@@ -2,7 +2,7 @@
 //  ContentViewCloset.swift
 //  VirtualCloset
 //
-//  Created by 이은주 on 2022/05/21.
+//  Created by 이은주 on 2022/06/09.
 //
 
 import SwiftUI
@@ -47,7 +47,7 @@ struct ContentViewCloset: View {
 }
 
 struct SpringClothes: View {
-    var springs = [Image("Clothes"),Image("cardigan2"),Image("Clothes"),Image("cardigan2"),Image("Clothes"),Image("cardigan2"),Image("Clothes"),Image("cardigan2")]
+    var springs = [Image("springpant"),Image("springshirt"), Image("Kimono")]
     
     private let adaptiveColumns = [
         GridItem(.adaptive(minimum:170))
@@ -57,7 +57,7 @@ struct SpringClothes: View {
         NavigationView {
             ScrollView {
                 LazyVGrid(columns: adaptiveColumns, spacing: 10) {
-                    ForEach(0..<8) { index in
+                    ForEach(0..<3) { index in
                         springs[index]
                             .resizable()
                             .scaledToFill()
@@ -72,7 +72,7 @@ struct SpringClothes: View {
 }
 
 struct SummerClothes: View {
-    var summers = [Image("shirt"),Image("shorts"),Image("shirt"),Image("shorts"),Image("shirt"),Image("shorts"),Image("shorts"),Image("shirt")]
+    var summers = [Image("summerpant"),Image("summershirt"),Image("summershirt2")]
     
     private let adaptiveColumns = [
         GridItem(.adaptive(minimum:170))
@@ -82,7 +82,7 @@ struct SummerClothes: View {
         NavigationView {
             ScrollView {
                 LazyVGrid(columns: adaptiveColumns, spacing: 10) {
-                    ForEach(0..<8) { index in
+                    ForEach(0..<3) { index in
                         summers[index]
                             .resizable()
                             .scaledToFill()
@@ -97,7 +97,7 @@ struct SummerClothes: View {
 }
 
 struct FallClothes: View {
-    var falls = [Image("coat1"),Image("coat2"),Image("coat1"),Image("coat2"),Image("coat1"),Image("coat2"),Image("coat1"),Image("coat2")]
+    var falls = [Image("autumnpant"),Image("autumnshirt"), Image("Untitled_Scan")]
     
     private let adaptiveColumns = [
         GridItem(.adaptive(minimum:170))
@@ -107,7 +107,7 @@ struct FallClothes: View {
         NavigationView {
             ScrollView {
                 LazyVGrid(columns: adaptiveColumns, spacing: 10) {
-                    ForEach(0..<8) { index in
+                    ForEach(0..<3) { index in
                         falls[index]
                             .resizable()
                             .scaledToFill()
@@ -122,7 +122,7 @@ struct FallClothes: View {
 }
 
 struct WinterClothes: View {
-    var winters = [Image("jacket"),Image("jacket2"),Image("jacket"),Image("jacket2"),Image("jacket"),Image("jacket2"),Image("jacket"),Image("jacket2")]
+    var winters = [Image("jacket2"),Image("winterpant")]
     
     private let adaptiveColumns = [
         GridItem(.adaptive(minimum:170))
@@ -132,7 +132,7 @@ struct WinterClothes: View {
         NavigationView {
             ScrollView {
                 LazyVGrid(columns: adaptiveColumns, spacing: 10) {
-                    ForEach(0..<8) { index in
+                    ForEach(0..<2) { index in
                         winters[index]
                             .resizable()
                             .scaledToFill()

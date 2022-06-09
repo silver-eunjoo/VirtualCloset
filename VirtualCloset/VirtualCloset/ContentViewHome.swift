@@ -2,7 +2,7 @@
 //  ContentViewHome.swift
 //  VirtualCloset
 //
-//  Created by 이은주 on 2022/05/21.
+//  Created by 이은주 on 2022/06/09.
 //
 
 import SwiftUI

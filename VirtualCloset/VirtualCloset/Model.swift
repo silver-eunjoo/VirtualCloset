@@ -1,34 +1,94 @@
 //
 //  Model.swift
-//  Vlet
+//  VirtualCloset
 //
-//  Created by Hruthvik Raj on 2022/05/28.
+//  Created by 이은주 on 2022/06/09.
 //
 
-import UIKit
+import SwiftUI
 import RealityKit
 import Combine
 
+enum ModelCategory: CaseIterable {
+    case Summer
+    case Winter
+    case Spring
+    case Autumn
+    
+    var label: String {
+        get {
+            switch self {
+            case .Summer:
+                return "Summer"
+            case .Winter:
+                return "Winter"
+            case .Spring:
+                return "Spring"
+            case .Autumn:
+                return "Autumn"
+            }
+        }
+    }
+}
+
+
 class Model {
-    var modelName: String
-    var image: UIImage
+    var name: String
+    var category: ModelCategory
+    var thumbnail: UIImage
     var modelEntity: ModelEntity?
-
-    private var cancellable: AnyCancellable? = nil
-    init(modelName: String)
-    {
-        self.modelName = modelName
-
-        self.image = UIImage(named: modelName)!
-
-        let filename = modelName + ".usdz"
+    var scaleCompensation: Float
+    
+    private var cancellable: AnyCancellable?
+    
+    init (name: String, category: ModelCategory, scaleCompensation: Float = 0.1) {
+        self.name = name
+        self.category = category
+        self.thumbnail = UIImage(named: name) ?? UIImage(systemName: "photo")!
+        self.scaleCompensation = scaleCompensation
+}
+    func asyncLoadModelEntity() {
+        let filename = self.name + ".usdz"
+        
         self.cancellable = ModelEntity.loadModelAsync(named: filename)
             .sink(receiveCompletion: { loadCompletion in
-                print("DEBUG: Unable to load modelEntity for modelName: \(self.modelName)")
+                
+                switch loadCompletion {
+                case .failure(let error): print("Unable to load modelEntity for \(filename). Error: \(error.localizedDescription)")
+                case .finished:
+                    break
+                }
+                
             }, receiveValue: { modelEntity in
+                
                 self.modelEntity = modelEntity
-                print("DEBUG: Succesfully loaded modelEntity for modelName: \(self.modelName)")
+                self.modelEntity?.scale *= self.scaleCompensation
+                
+                print("modelEntity for \(self.name) has been loaded.")
             })
     }
 }
 
+struct Models {
+    var all: [Model] = []
+    
+    init() {
+        //Summer
+        let Kimono = Model(name: "Kimono", category: .Summer, scaleCompensation: 1.17)
+        
+        //Winter
+        let Ddata = Model(name: "3Ddata", category: .Winter, scaleCompensation: 1.17)
+        
+        //Autumn
+        let Japanese_Clothes = Model(name: "Japanese_Clothes", category: .Autumn, scaleCompensation: 1.17)
+        
+        //Spring
+        let Untitled_Scan = Model(name: "Untitled_Scan", category: .Spring, scaleCompensation: 1.17)
+        
+        self.all += [Kimono, Ddata, Japanese_Clothes, Untitled_Scan]
+    }
+    
+    func get(category: ModelCategory) -> [Model] {
+        return all.filter( {$0.category == category} )
+    }
+}
